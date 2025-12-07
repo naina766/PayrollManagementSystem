@@ -2,6 +2,7 @@ import axios from "axios";
 
 const API = axios.create({
   baseURL: "https://payrollmanagementsystem-egdi.onrender.com/api",
+  withCredentials: true,
   headers: { "Content-Type": "application/json" }
 });
 
