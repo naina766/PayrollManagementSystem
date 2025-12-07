@@ -12,7 +12,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: "https://payrollmanagementsystem-ten.vercel.app",
+  origin: "https://payrollmanagementsystem-ten.vercel.app"
   credentials: true,
 }));
 connectDB();
