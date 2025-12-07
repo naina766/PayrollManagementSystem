@@ -1,22 +1,50 @@
-# React + Vite
+# Employee & Admin Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-featured web dashboard for managing employees, salary slips, and monthly expenses. Built with **React.js**, **Node.js**, **Express**, **MongoDB**, and **Tailwind CSS**, it supports data visualization, PDF export, and role-based functionality.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Features**
 
-## React Compiler
+### Admin Features
+- Create, update, and view employee salary slips.
+- View salary and expense trends via interactive charts.
+- Export salary slips as PDF.
+- Approve or reject employee expenses (with status tracking).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Employee Features
+- Submit monthly expenses with amount, description, and month.
+- View expense history and status (pending/approved/rejected).
+- View personal salary slips.
+- Interactive charts for salary and expense trends (optional).
 
-## Expanding the ESLint configuration
+### Optional / Good-to-Have
+- Notifications for approvals (in-app alerts).
+- Expense approval/rejection workflow.
+- Modern UI with gradients, shadows, and responsive design.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## **Tech Stack**
+
+- **Frontend:** React.js, Tailwind CSS, Recharts, react-toastify
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB (Mongoose ORM)
+- **PDF Export:** jsPDF
+- **Charts:** Recharts
+- **Authentication:** JWT-based role system (Admin & Employee)
+
+---
+
+## **Installation**
+
+### Clone the repository
+```bash
+git clone https://github.com/yourusername/employee-dashboard.git
+cd employee-dashboard
 
 
-# Backend
+## Backend
 
 ``` bash
 cd backend
@@ -31,24 +59,24 @@ JWT_SECRET=<your-jwt-secret>
 PORT=5000
 ```
 
-## Start backend:
+### Start backend:
 ``` bash
 npm run dev 
 ```
 
-# Frontend
+## Frontend
 
 ```bash
 cd frontend
 npm install
 ```
 
-## Create .env file:
+### Create .env file:
 ``` bash
 VITE_BACKEND_PUBLIC_API_URL=http://localhost:5000
 ```
 
-## Start frontend: 
+### Start frontend: 
 ```bash
 npm run dev
 ```
@@ -91,29 +119,31 @@ backend/
 # Dependencies
 ## Frontend
 
-• react, react-dom, react-toastify
-• axios
-• recharts
-• jspdf, jspdf-autotable
-• tailwindcss
-• Backend
-• express, mongoose
-• bcryptjs, jsonwebtoken
-• dotenv
-• cors
+1. react, react-dom, react-toastify
+2. axios
+3. recharts
+4. jspdf, jspdf-autotable
+5. tailwindcss
+6. Backend
+7. express, mongoose
+8. bcryptjs, jsonwebtoken
+9. dotenv
+10. cors
 
 # Screenshots
 
 ## Admin Dashboard
+<img width="1911" height="851" alt="image" src="https://github.com/user-attachments/assets/440205b0-8e20-4118-9648-d43359fc85f2" />
 
 ## Employee Dashboard
 
+<img width="1882" height="881" alt="image" src="https://github.com/user-attachments/assets/c45b5676-4785-4895-b454-070f567b776b" />
 
 # Future Improvements
 
-• Email notifications for expense approval.
-• Add more charts (monthly, yearly trends).
-• Enhance UI with dark/light theme toggle.
-• Add filters for table data.
-• Implement role-based route protection on frontend.
+- Email notifications for expense approval.
+- Add more charts (monthly, yearly trends).
+- Enhance UI with dark/light theme toggle.
+- Add filters for table data.
+- Implement role-based route protection on frontend.
 
